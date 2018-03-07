@@ -1,5 +1,12 @@
 # Astroquiz
 
+Astroquiz is a very small web application to help me learn Elixir and also work on another goal, to learn the stars used by Celestron in the Nexstar database for aligning their telescope mounts.
+
+Its a very simple quiz. You choose which constellation a star is associated with, and then find out if you are right.
+
+David
+
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
