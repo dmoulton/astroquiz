@@ -1,0 +1,5 @@
+<h2>Edit Star</h2>
+
+<%= render "form.html", Map.put(assigns, :action, star_path(@conn, :update, @star)) %>
+
+<span><%= link "Back", to: star_path(@conn, :index) %></span>

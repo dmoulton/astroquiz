@@ -1,0 +1,8 @@
+<h1><%= @response %></h1>
+
+<p>Your Answer: <%= @constellation%></p>
+
+<p>Correct Answer: <%= @star.popular_name %> (<%= @star.formal_name %>) is in <b><%= @star.constellation %></b></p>
+<p><%= link("Another", to: "/stars/question") %></p>
+
+<img src="/images/<%=String.downcase(@star.popular_name)%>.png" height="500">

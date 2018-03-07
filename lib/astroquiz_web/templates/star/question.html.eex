@@ -1,0 +1,12 @@
+<h2>Alignment Star Quiz</h2>
+Star Name: <%= @star.popular_name %>
+
+<%= form_for @changeset, "/stars/answer", fn f -> %>
+  <div class="form-group">
+    <%= hidden_input f, :id , value: @star.id %>
+    
+    This star is in the constellation: <%= select(f, :constellation, @constellations) %>
+  </div>
+
+  <%= submit "Answer", class: "btn btn-primary" %>
+<% end %>

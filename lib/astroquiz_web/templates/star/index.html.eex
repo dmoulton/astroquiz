@@ -1,0 +1,32 @@
+<h2>Listing Stars</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Popular name</th>
+      <th>Formal name</th>
+      <th>Constellation</th>
+      <th>Description</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for star <- @stars do %>
+    <tr>
+      <td><%= star.popular_name %></td>
+      <td><%= star.formal_name %></td>
+      <td><%= star.constellation %></td>
+      <td><%= star.description %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: star_path(@conn, :show, star), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: star_path(@conn, :edit, star), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: star_path(@conn, :delete, star), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Star", to: star_path(@conn, :new) %></span>

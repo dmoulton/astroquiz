@@ -1,0 +1,28 @@
+<h2>Show Star</h2>
+
+<ul>
+
+  <li>
+    <strong>Popular name:</strong>
+    <%= @star.popular_name %>
+  </li>
+
+  <li>
+    <strong>Formal name:</strong>
+    <%= @star.formal_name %>
+  </li>
+
+  <li>
+    <strong>Constellation:</strong>
+    <%= @star.constellation %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @star.description %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: star_path(@conn, :edit, @star) %></span>
+<span><%= link "Back", to: star_path(@conn, :index) %></span>
