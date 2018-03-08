@@ -1,8 +1,11 @@
-<h1><%= @response %></h1>
-
-<p>Your Answer: <%= @constellation%></p>
-
-<p>Correct Answer: <%= @star.popular_name %> (<%= @star.formal_name %>) is in <b><%= @star.constellation %></b></p>
-<p><%= link("Another", to: "/stars/question") %></p>
-
-<img src="/images/<%=String.downcase(@star.popular_name)%>.png" height="500">
+<div class="card">
+  <div class="card-image">
+    <p><img src="/images/<%=String.downcase(@star.popular_name)%>.png"></p>
+    <a href="/stars/question" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">navigate_next</i></a>
+  </div>
+  <div class="card-content">
+  <span class="card-title"><%= @response %></span>
+    <p>Your Answer: <%= @constellation%></p>
+    <p>Correct Answer: <%= @star.popular_name %> (<%= @star.formal_name %>) is in <b><%= @star.constellation %></b></p>
+  </div>
+</div>
