@@ -9,3 +9,13 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias Astroquiz.Repo
+alias Astroquiz.Quizzes.Star
+
+Repo.insert!(%Star{popular_name: "Choo", formal_name: "Alpha Arae", description: "", constellation: "Ara"})
+Repo.insert!(%Star{popular_name: "Arcturus", formal_name: "Alpha Boötis", description: "", constellation: "Bootes"})
+Repo.insert!(%Star{popular_name: "Izar", formal_name: "Epsilon Boötis", description: "", constellation: "Bootes"})
+Repo.insert!(%Star{popular_name: "Muphrid", formal_name: "Eta Boötis", description: "", constellation: "Bootes"})
+Repo.insert!(%Star{popular_name: "Nekkar", formal_name: "Beta Boötis", description: "", constellation: "Bootes"})
+Repo.insert!(%Star{popular_name: "", formal_name: "", description: "", constellation: ""})

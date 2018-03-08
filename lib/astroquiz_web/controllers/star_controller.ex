@@ -60,13 +60,13 @@ defmodule AstroquizWeb.StarController do
   end
 
   def quiz_question(conn, _params) do
-    star_id = :rand.uniform(5)
-    star = Repo.get!(Star, star_id)
-    changeset = Star.changeset(%Star{})
-    
     constellations = Quizzes.list_stars()
       |> Enum.map(fn(x) -> x.constellation end)
       |> Enum.dedup()
+
+    star_id = :rand.uniform(Enum.count(constellations))
+    star = Repo.get!(Star, star_id)
+    changeset = Star.changeset(%Star{})
 
     render(conn, "question.html", star: star, changeset: changeset, constellations: constellations)
   end

@@ -16,7 +16,7 @@ defmodule AstroquizWeb.Router do
   scope "/", AstroquizWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", StarController, :quiz_question
     get "/stars/question", StarController, :quiz_question
     post "/stars/answer", StarController, :quiz_answer
     resources "/stars", StarController
