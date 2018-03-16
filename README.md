@@ -4,6 +4,8 @@ Astroquiz is a very small web application to help me learn Elixir and also work 
 
 Its a very simple quiz. You choose which constellation a star is associated with, and then find out if you are right.
 
+You can use this app by visiting http://astroquiz.herokuapp.com
+
 David
 
 
