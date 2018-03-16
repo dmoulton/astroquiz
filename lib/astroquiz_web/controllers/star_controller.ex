@@ -63,6 +63,7 @@ defmodule AstroquizWeb.StarController do
     stars = Quizzes.list_stars()
     constellations = stars
       |> Enum.map(fn(x) -> x.constellation end)
+      |> Enum.sort()
       |> Enum.dedup()
 
     star_id = :rand.uniform(Enum.count(stars))
@@ -78,11 +79,11 @@ defmodule AstroquizWeb.StarController do
 
     case star.constellation do
       ^constellation -> 
-        response = "CORRECT!"
+        render(conn, "answer.html", star: star, constellation: constellation, response: "CORRECT!!!")
       _ ->
-        response = "INCORRECT"
+        render(conn, "answer.html", star: star, constellation: constellation, response: "INCORRECT")
     end
 
-    render(conn, "answer.html", star: star, constellation: constellation, response: response)
+    
   end
 end

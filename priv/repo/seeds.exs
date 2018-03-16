@@ -13,14 +13,14 @@
 alias Astroquiz.Repo
 alias Astroquiz.Quizzes.Star
 
-Repo.insert!(%Star{popular_name: "Alperatz", formal_name: "Alpha Andromedae", description: "Magnitude 2.0", constellation: "Andromeda"})
+Repo.insert!(%Star{popular_name: "Alpheratz", formal_name: "Alpha Andromedae", description: "Magnitude 2.0", constellation: "Andromeda"})
 Repo.insert!(%Star{popular_name: "Arcturus", formal_name: "Alpha Boötis", description: "Magnitude -0.5", constellation: "Bootes"})
 Repo.insert!(%Star{popular_name: "Caph", formal_name: "Beta Cassiopeiae", description: "Magnitude 2.2", constellation: "Cassiopeia"})
 Repo.insert!(%Star{popular_name: "Algenib", formal_name: "Gamma Pegasi", description: "Magnitude 2.8", constellation: "Pegasus"})
 Repo.insert!(%Star{popular_name: "Navi", formal_name: "Gamma Cassiopeiae", description: "Magnitude 1.6", constellation: "Cassiopeia"})
 Repo.insert!(%Star{popular_name: "Mirach", formal_name: "Beta Andromedae", description: "Magnitude 2.0", constellation: "Andromeda"})
 Repo.insert!(%Star{popular_name: "Achernar", formal_name: "Alpha Eridani", description: "Magnitude 0.4", constellation: "Eriandus"})
-Repo.insert!(%Star{popular_name: "Hamal", formal_name: "Alpha Arietis", description: "Magnitude 2.0", constellation: "Ares"})
+Repo.insert!(%Star{popular_name: "Hamal", formal_name: "Alpha Arietis", description: "Magnitude 2.0", constellation: "Aries"})
 Repo.insert!(%Star{popular_name: "Polaris", formal_name: "Alpha Ursae Minoris", description: "Magnitude 2.0", constellation: "Ursa Minor"})
 Repo.insert!(%Star{popular_name: "Mirfak", formal_name: "Alpha Persei", description: "Magnitude 1.8", constellation: "Perseus"})
 Repo.insert!(%Star{popular_name: "Alphecca", formal_name: "Alpha Coronae Borealis", description: "Magnitude 2.3", constellation: "Corona Borealis"})
