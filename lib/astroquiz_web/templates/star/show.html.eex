@@ -22,6 +22,10 @@
     <%= @star.description %>
   </li>
 
+  <li>
+    <img src="/images/<%=String.downcase(@star.popular_name) |> String.replace(" ","") %>.png" class="responsive_image">
+  </li>
+  
 </ul>
 
 <span><%= link "Edit", to: star_path(@conn, :edit, @star) %></span>
